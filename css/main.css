@@ -2,57 +2,30 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+html {
+    color: rgb(77, 77, 77);
 }
 
 body {
+    background: #c6c6c6;
     font-size: 1em;
     line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #60b9ce;
+    background: #5ec7c9;
+    color: rgb(0, 103, 105);
     text-shadow: none;
 }
 
 ::selection {
-    background: #60b9ce;
+    background: #5ec7c9;
+    color: rgb(0, 103, 105);
     text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 img {
     vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }
 
 
@@ -75,18 +48,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #a65200;
+    border-bottom: 20px solid #328d8e;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #a65200;
+    border-top: 20px solid #328d8e;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #ff7f00;
+    background: #3fb3b5;
 }
 
 .title {
@@ -111,17 +84,13 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #a65200;
+    color: rgb(146, 237, 238);
+    background: #328d8e;
 }
 
 nav a:hover,
 nav a:visited {
     color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 /* ==============
@@ -142,7 +111,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: rgb(0, 103, 105);
     padding: 20px 0;
 }
 
@@ -173,7 +142,12 @@ section:not(.active) p {
 
 section:not(.active) h2 {
     cursor: pointer;
-    color: #666;
+    color: #3fb3b5;
+}
+
+section:not(.active) h2:hover {
+    cursor: pointer;
+    color: rgb(77, 77, 77);
 }
 
 section h2 {
