@@ -58,6 +58,7 @@ section {
     padding: 20px;
     margin: 5px;
     border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 #sections section {
