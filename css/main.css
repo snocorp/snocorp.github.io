@@ -3,62 +3,59 @@ body {
 }
 
 a {
-    color: #0069AA;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h1, h2 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .header {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(128, 128, 128, 0.8);
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .header nav li {
-    display: inline-block;
-    background-color: #999;
-    border: 1px solid #aaa;
-    border-radius: 4px
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px
 }
 
 .header nav a,
 .header nav a:visited {
-    display: inline-block;
-    width: 40px;
-    padding: 8px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.header nav li.selected {
-    border: 1px solid #ccc;
-}
-
+.header nav li.selected,
 .header nav li:hover {
-    border: 1px solid #eee;
+  border: 1px solid;
 }
 
 .content {
-    background: url(../img/mountains.png) 50% 5px no-repeat;
-    min-height: 406px;
+  background: url(../img/mountains.png) 50% 5px no-repeat;
+  min-height: 406px;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+#summary .pure-menu {
+  display: inline-block;
 }
 
 #sections section {
@@ -67,4 +64,113 @@ section {
 
 #sections section.selected {
     display: block;
+}
+
+body.light {
+  background-color: #fff;
+
+  transition: background-color 2s;
+}
+
+body.dark {
+  background-color: #444;
+
+  transition: background-color 2s;
+}
+
+body.light a {
+  color: #0069AA;
+
+  transition: color 2s;
+}
+
+body.dark a {
+  color: #0069CC;
+
+  transition: color 2s;
+}
+
+body.light .header {
+  background-color: rgba(128, 128, 128, 0.8);
+
+  transition: background-color 2s;
+}
+
+body.dark .header {
+  background-color: rgba(32, 32, 32, 0.8);
+
+  transition: background-color 2s;
+}
+
+body.light .header nav li {
+  background-color: #999;
+  border-color: #aaa;
+
+  transition: 2s;
+}
+
+body.dark .header nav li {
+  background-color: #333;
+  border-color: #222;
+
+  transition: 2s;
+}
+
+body.light .header nav a,
+body.light .header nav a:visited {
+  color: #fff;
+
+  transition: 2s;
+}
+
+body.dark .header nav a,
+body.dark .header nav a:visited {
+  color: #fff;
+
+  transition: 2s;
+}
+
+body.light .header nav li.selected {
+  border-color: #ccc;
+
+  transition: 2s;
+}
+
+body.light .header nav li:hover {
+  border-color: #eee;
+
+  transition: 2s;
+}
+
+body.dark .header nav li.selected {
+  border-color: #333;
+
+  transition: 2s;
+}
+
+body.dark .header nav li:hover {
+  border-color: #444;
+
+  transition: 2s;
+}
+
+body.light section {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(128, 128, 128, 0.2);
+  color: #333;
+
+  transition: 2s;
+}
+
+body.dark section {
+  background-color: rgba(64, 64, 64, 0.7);
+  border-color: rgba(32, 32, 32, 0.4);
+  color: #eee;
+
+  transition: 2s;
+}
+
+@keyframes body_bg_color_to_dark {
+	from { background-color: #fff; }
+	to { background-color: #444; }
 }
