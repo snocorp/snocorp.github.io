@@ -13,3 +13,6 @@ function work() {
     document.getElementById('life').className = '';
     document.getElementById('work').className = 'selected';
 }
+function theme() {
+    document.body.className=(document.body.className=='light'?'dark':'light');
+}

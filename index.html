@@ -25,6 +25,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/base-min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/menus-min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="light">
@@ -40,25 +41,37 @@
         </div>
 
         <div class="content pure-g">
-            <div class="pure-u-1 pure-u-md-1-3"></div>
-            <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pure-u-1 pure-u-sm-1-8 pure-u-md-1-6"></div>
+            <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-2-3">
                 <section id="summary">
                     <h1>dave sewell</h1>
                     <p>I'm a software developer with a passion for front end and web development but have strong skills in the full application stack. I enjoy riding a bike, snowboarding, running and occasionally swimming. I live in Ottawa with my wife and my dog and cat.</p>
-                    <div class="pure-menu">
+                    <div class="pure-menu pure-menu-horizontal">
                       <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a class="pure-menu-link" href="mailto:snocorp@gmail.com">snocorp@gmail.com</a></li>
                         <li class="pure-menu-item"><a class="pure-menu-link" href="https://twitter.com/snocorp/">@snocorp</a></li>
                         <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/snocorp">github</a></li>
                       </ul>
                     </div>
+                    <h2>Stuff I've created</h2>
+                    <div class="pure-menu">
+                      <dl class="pure-menu-list">
+                        <dt class="pure-menu-item"><a class="pure-menu-link" href="http://www.movementium.com/">Movmentium</a></dt>
+                        <dd>Pace calculator in React (<a href="https://github.com/snocorp/movementium2">repo</a>)</dd>
+                        <dt class="pure-menu-item"><a class="pure-menu-link" href="http://meansweep-snocorp.rhcloud.com/">MeanSweep</a></dt>
+                        <dd>Mine Sweeper clone in Python and Angular (<a href="https://github.com/snocorp/meansweep">repo</a>)</dd>
+                        <dt class="pure-menu-item"><a class="pure-menu-link" href="http://flophase.appsport.com/">FloPhase</a></dt>
+                        <dd>Cash flow tracker in Java and JavaScript (<a href="https://github.com/snocorp/floweb2">repo</a>)</dd>
+                      </ul>
+                    </div>
+                    <p style="text-align: center;"><small><a href="javascript:theme();">toggle theme</a></small></p>
                 </section>
                 <div id="sections">
                     <section id="life">
                         <h2>life</h2>
                         <p>I was born in Fernie, <acronym title="British Columbia">BC</acronym>. I lived there (technically Hosmer) for six years and learned to ski at a very young age. I attended Isabella Dicken Elementary School for kindergarten and grade one. My mom worked as a dietitian at Fernie District Hospital, where I was born. My father worked at the Westar coal mine near Sparwood as a computer programmer. When the mine closed, my family and I moved to Calgary, <acronym title="Alberta" lang="en">AB</acronym> for a short period. Next I moved to Brooks, <acronym title="Alberta" lang="en">AB</acronym>, which is east of Calgary along the Trans-Canada Highway. After a year in Brooks, I moved to Georgetown, <acronym title="Ontario">ON</acronym> where I lived until I moved away to university in September 2001.</p>
                         <p>I lived in Ottawa, <acronym title="Ontario">ON</acronym> enrolled at Carleton University working on completing a Bachelor of Computer Science for five years. I moved back to Calgary after graduation to come back to the mountains. My stay in Calgary was short-lived, and I ended up back in Ottawa after only four months.</p>
-                        <p>While working in Ottawa, I moved around a couple times, met my wife Jen, even lived in Gatineau, <acronym title="Quebec">QC</acronym> for a couple years. I've travelled to Cuba, the Dominican Republic, Jamaica and Italy. Now I call Barrhaven home.</p>
+                        <p>While working in Ottawa, I moved around a couple times, met my wife Jen, even lived in Gatineau, <acronym title="Quebec">QC</acronym> for a couple years. I've travelled to Mexico, Cuba, the Dominican Republic, Jamaica and Italy. Now I call Westboro home.</p>
                     </section>
                     <section id="code">
                         <h2>code</h2>
@@ -67,11 +80,12 @@
                         <p>At the same time I started writing some business logic with my dad where he worked. We mainly used dbase and foxpro to write reports and keep track of inventory.</p>
                         <p>I was hooked, so off to university I went. I studied Computer Science at Carleton. I spent the first couple years learning Java and C. I didn't write much on my own time though, instead choosing to put all my effort into my assignments. I also was part of the co-op program. My first co-op was at the Admissions department of Carleton. It was here I got my first real taste of web development and never really looked back since then. I wrote some Perl and a lot of PHP to for intranet application as well as their public web site. My second co-op was at Nav Canada where I learned a lot about SQL and databases there. My third co-op was where I learned JavaScript and dynamic web pages developing a product called ReportNet for what was then called Cognos. My final co-op was at Mxi. I eventually came back and worked there full time.</p>
                         <p>Since I started working life, I have tried to start a few open source software projects. Some got more attention than others. One of my favourites is called flophase, which is a cash flow and budgeting application. The first iteration was a Swing application, the second used Google's App Engine.</p>
-                        <p>Lately I've been learning about node and a few of the interesting MVC web frameworks that are becoming popular. It's a huge change from Java web applications but it's definitely refreshing.</p>
+                        <p>Lately I've been learning about Elixir, Phoenix and Elm. Functional programming is a huge shift but it's definitely refreshing.</p>
                     </section>
                     <section id="work">
                         <h2>work</h2>
-                        <p>In July, 2014 I started as a full stack developer at <a href="https://nivaha.co/">Nivaha</a>. I worked with a small team in a startup environment building a Ruby on Rails application for managing field service data. Working at Nivaha has made me more well-rounded, and improved my skills in areas I would have never imagined like sales and marketing.</p>
+                        <p>Near the end of 2015 I started working at <a href="https://www.surveymonkey.com">SurveyMonkey</a> on the App Platform team building Python applications. The majority of my work has been with an email platform that allows other systems in the company to send emails to customers and survey rexipients.</p>
+                        <p>In July, 2014 I started as a full stack developer at Nivaha. I worked with a small team in a startup environment building a Ruby on Rails application for managing field service data. Working at Nivaha has made me more well-rounded, and improved my skills in areas I would have never imagined like sales and marketing.</p>
                         <p>Until July, 2014 I worked as developer in the Engineering Support team at Mxi Technologies. I learned a great deal about the aviation domain during those years. Over the years my role expanded to include design and architecture responsibilities in addition to assisting teams developing new features, especially related to front-ends. The tech stack I've been exposed to includes Oracle, several application servers, Java and J2EE, JSPs and Servlets. I've also worked on rich web front ends using jQuery, Knockout, Wijmo and Angular. The build tooling we have used includes Crucible, Jira, Confluence, Anthill, Ant, Gradle, jUnit, OWB, and many others.</p>
                         <p>Check out my <a href="https://docs.google.com/document/d/1w6vFwNz77teIy6rNcZjRw7Z3VE_ife-pvB19UBipgaM/edit?usp=sharing">resume</a> for more details.</p>
                     </section>
